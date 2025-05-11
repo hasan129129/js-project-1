@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>হিসাব</title>
+</head>
+<body>
+	<div class="form">
+		<h2>পণ্যের তথ্য লিখুন</h2>
+		<form id="product-form">
+			<input type="text" id="name" placeholder="পণ্যের নাম" required>
+			<input type="number" id="buyPrice" placeholder="ক্রয় মূল্য" required>
+			<input type="number" id="sellPrice" placeholder="বিক্রয় মূল্য" required>
+			<input type="number" id="quantity" placeholder="পরিমাণ" required>
+			<button type="submit" onclick="addProduct()">যুক্ত করুন</button>
+		</form>
+	<div id="product-list">
+		<h2>পণ্যের তালিকা</h2>
+		<table class="table">
+			<tr>
+				<th>পণ্যের নাম</th>
+				<th>ক্রয় মূল্য</th>
+				<th>বিক্রয় মূল্য</th>
+				<th>পরিমাণ</th>
+				<th>লাভ/ক্ষতি</th>
+			</tr>
+		</table>
+	</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
